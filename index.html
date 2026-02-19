@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Centre de formation informatique spécialisé dans le numérique">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre Numérique</title>
+    <link rel="stylesheet" href="script.css">
+</head>
+<body>
+
+<header>
+    <img src="image/centre de formation.jpg.png" alt="logo du centre de formation" class="logo">
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#formations">Formations</a></li>
+        <li><a href="#inscription">Inscription</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section id="presentation">
+        <h2>QUI SOMMES NOUS ?</h2>
+        <p>
+            Le Centre de formation Numérique ( enfants de coeur) est un centre de formation spécialisé dans les métiers
+            du digital : développement web, design, bureautique, programmation et bien d'autres... 
+            nous sommes une ONG qui forme les enfants défavorisés et n'ayants pas 
+            les moyens pour se faire former.
+        </p>
+    </section>
+
+    <section id="formations">
+        <h2>NOS FORMATION</h2>
+
+        <div class="formations-container">
+            <!-- 6 formations -->
+            <article class="card">
+                <h3>HTML & CSS</h3>
+                <img src="image/photo_html-css.jpg" alt="image" class="card-image" style="width: 300px;" width="200">
+                <p>Apprendre à créer des sites web modernes.</p>
+            </article>
+
+            <article class="card">
+                <h3>JavaScript</h3>
+                <img src="image/photo_javascript.jpg" alt="image" class="card-image"  style="width: 300px;" width="200">
+                <p>Rendre les sites web interactifs.</p>
+            </article>
+
+            <article class="card">
+                <h3>PHP & MySQL</h3>
+                <img src="image/photo_php.jpg" alt="image" class="card-image"  style="width: 300px;" width="200">
+                <p>Créer des applications web dynamiques.</p>
+            </article>
+
+            <article class="card">
+                <h3>Design Graphique</h3>
+                <img src="image/photo_disign.jpg" alt="image" class="card-image"  style="width: 300px;" width="200">
+                <p>Maîtriser Photoshop et Illustrator.</p>
+            </article>
+
+            <article class="card">
+                <h3>Bureautique</h3>
+                <img src="image/photo_bureautique.jpg" alt="image" class="card-image"  style="width: 300px;" width="200">
+                <p>Word, Excel et PowerPoint professionnels.</p>
+            </article>
+
+            <article class="card">
+                <h3>Python</h3>
+                <img src="image/photo_python.jpg" alt="image" class="card-image"  style="width: 300px;" width="200">
+                <p>Programmation et automatisation.</p>
+            </article>
+        </div>
+
+        <button id="more">Afficher plus de formations</button>
+    </section>
+
+    <section id="inscription">
+        <h2>Inscription</h2>
+
+        <form method="POST">
+            <label for="nom">Nom complet</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="formation">Formation choisie</label>
+            <select id="formation" name="formation" required>
+                <option value="">-- Choisir --</option>
+                <option>HTML & CSS</option>
+                <option>JavaScript</option>
+                <option>PHP & MySQL</option>
+                <option>bureautique</option>
+                <option>python</option>
+                <option>disign Graphique</option>
+                <option>REACT.JS</option>
+                <option>Cybersécurité</option>
+                <option>Intélligence Artificille</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">S'inscrire</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Centre Numérique – Tous droits réservés</p>
+</footer>
+
+<script src="style.js"></script>
+</body>
+</html>
